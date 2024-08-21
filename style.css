@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+#container {
+    background-color: #f8f8f8;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    box-shadow: inset 4px 4px 6px #cecece, 5px 5px 10px #727272;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 350px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: scale(.7);
+    background-color: rgb(86, 81, 81);
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px #c4c4c4;
+    transition: 0.3s ease-in-out;
+}
+
+#container.active .toggle {
+    transition: 0.3s ease-in-out;
+    left: 40px;
+}
+
+body.active {
+    background-color: rgb(36, 36, 36);
+}
